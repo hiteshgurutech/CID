@@ -75,7 +75,6 @@ public class Email extends AppCompatActivity {
                             PrefHelper.saveStatus(activity, Constants.STATUS.UNCONFIRMED);
                         } else {
                             PrefHelper.saveStatus(activity, Constants.STATUS.UNCONFIRMED);
-                            //startActivity(new Intent(activity,VerifySMS.class));
                         }
                         DisplayUtils.showCustomToast(activity, jsonObject.getString("message"));
                     }
