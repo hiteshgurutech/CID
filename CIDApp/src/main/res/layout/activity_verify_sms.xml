@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cidapp.VerifySMS">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="We sent verification code in SMS. Please check your SMS in to:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dark_gray" />
+
+        <LinearLayout
+            android:id="@+id/lay_mobile_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_label1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sms_imgFlag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/country_in" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sms_tvMobilenNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="+91 99099 99099"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/dark_gray" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/sms_etVerifyCode"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lay_mobile_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:hint="@string/label_verify_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/dark_gray"
+
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sms_btnVerification"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sms_etVerifyCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:text="@string/label_verify"
+            android:textColor="@color/white" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sms_btnResend"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sms_btnVerification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:text="@string/label_resend"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

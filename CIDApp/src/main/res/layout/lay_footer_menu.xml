@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:id="@+id/footer_tvAboutUs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="About Us"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:id="@+id/footer_tvAboutApp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="About App"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:id="@+id/footer_tvDetail"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="App Details"/>
+</LinearLayout>

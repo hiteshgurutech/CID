@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cidapp.Splash"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/star_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <LinearLayout
+        android:id="@+id/layProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:layout_below="@+id/imgLogo">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/spalsh_tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/splash_tvStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/white"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:id="@+id/lay_status_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+
+        android:layout_above="@id/splash_tvStart">
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/txtChkWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checking Wifi"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:theme="@style/WhiteCheck"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/txtChkLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checking Location"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:theme="@style/WhiteCheck"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/txtChkUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checking Update"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:theme="@style/WhiteCheck"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/txtChkRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Register"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:theme="@style/WhiteCheck"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layUpperLayer"
+        android:background="?colorPrimary"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_android_black_256dp"
+            android:layout_height="100dp"/>
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/nilesh/Nilesh/CID App Git/Android-APP/intlphoneinput/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b3ff9d51bc061eef45f959324f5274a565df5b43">
+        <dex dex="/home/nilesh/Nilesh/CID App Git/Android-APP/CIDApp/build/intermediates/pre-dexed/debug/classes_c36d7c999569750e3a998c79382fe32e80bbbff7.jar" />
+    </item>
+
+</items>

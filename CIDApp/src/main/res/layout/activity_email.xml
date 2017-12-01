@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cidapp.Email">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/email_tvEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please verify your email : abc@example.com. "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/email_btnResend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Resend Email"
+        android:layout_below="@+id/email_tvEmailText"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/email_btnRedirect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Redirect to login"
+        android:layout_below="@+id/email_btnResend"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/email_btnChangeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="Change Email Address"
+            android:layout_below="@+id/email_btnRedirect"/>
+        </RelativeLayout>
+
+</RelativeLayout>

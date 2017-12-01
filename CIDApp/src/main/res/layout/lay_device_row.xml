@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:text="Phone number"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/txtPhoneStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhoneNumber"
+
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/btnPhoneVerify"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txtPhoneStatus"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="?colorPrimary"
+        android:text="Verify"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnPhoneDeactive"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txtPhoneStatus"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/btnPhoneVerify"
+        android:background="?colorPrimary"
+        android:text="Deactivate"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

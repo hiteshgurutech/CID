@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="11111"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/action_profile"
+                android:menuCategory="secondary"
+                android:title="@string/label_profile"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_transction"
+                android:menuCategory="secondary"
+                android:title="@string/label_add_transcation"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_support"
+                android:menuCategory="secondary"
+                android:title="@string/label_support"
+                android:visible="false"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_transction_list"
+                android:menuCategory="secondary"
+                android:title="@string/label_transcation_list"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_logout"
+                android:menuCategory="secondary"
+                android:title="@string/label_logout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

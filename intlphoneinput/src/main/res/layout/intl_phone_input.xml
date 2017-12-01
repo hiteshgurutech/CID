@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Counrtry"
+        android:textColor="@color/dark_gray"
+        android:paddingTop="@dimen/dp_10"/>
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:paddingRight="1dp"
+        android:paddingEnd="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/intl_phone_edit__country"
+        android:dropDownWidth="350dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="?android:attr/selectableItemBackground"
+        tools:ignore="RtlSymmetry" />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:textColor="@color/dark_gray"
+        android:paddingTop="@dimen/dp_10"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intl_phone_edit__phone"
+        android:lines="1"
+        android:textSize="@dimen/text_size_default"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColorHint="@color/dark_gray"
+        android:inputType="phone" />
+</LinearLayout>
